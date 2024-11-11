@@ -1,25 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import FileInput from './FileInput';
+import ImageCompressor from './ImageCompressor';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <main style={{ height: '100vh' }}>
+      <header>
+        <h1 style={{ textAlign: 'center' }}>Image Compressor</h1>
       </header>
-    </div>
+      <ImageCompressor></ImageCompressor>
+    </main>
   );
 }
 
