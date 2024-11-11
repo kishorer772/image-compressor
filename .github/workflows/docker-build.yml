@@ -29,9 +29,9 @@ jobs:
       # Step 4: Build the Docker image
       - name: Build Docker image
         run: |
-          docker build -t your-username/your-image-name:latest .
+          docker build -t kishorer772/image-compressor:latest .
 
       # Step 5: Push Docker image to Docker Hub (optional)
       - name: Push Docker image
         run: |
-          docker push your-username/your-image-name:latest
+          docker push kishorer772/image-compressor:latest
